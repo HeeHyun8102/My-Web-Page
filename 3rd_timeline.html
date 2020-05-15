@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='timeline_style.css'>
+</head>
+<body>
+    <div id='title'>
+        <h1 style='text-align: center;'> 나의 일생</h1>
+    </div>
+    <div class='buttons'>
+        <button class='changebg' onclick="
+        document.querySelector('body').style.backgroundImage='url(dog.jpg)'
+        ">강아지</button>
+        <button class="changebg"  onclick="
+        document.querySelector('body').style.backgroundImage='url(cat.jpg)'
+        ">고양이</button>
+    </div>
+    <div class='content'>
+        <div class = 'card'>
+            <img src='baby.jpg'>
+            <div class='date'>1998. 11. 20.</div>
+            <div class='what'>탄생</div>
+            <div class='where'>경기도 파주</div>
+            <div class='text'>내가 건강하지 못 해서 결국 <br>엄마가 수술을 했다.</div>
+            <div class='dot'></div>
+        </div>
+        <div class='card'>
+            <img src='hospital.jpg'>
+            <div class='date'>1999. 02.</div>
+            <div class='what'>입원</div>
+            <div class='where'>명지병원</div>
+            <div class='text'>페렴, 기관지염, 천식</div>
+            <div class='dot'></div>
+        </div>
+        <div class='card'>
+            <img src='child.jpg'>
+            <div class='date'>2003. 03.</div>
+            <div class='what'>유치원 입학</div>
+            <div class='where'>앨림 유치원</div>
+            <div class='text'>계속 병원에 있었어서<br> 6살에야 유치원에 갔다.</div>
+            <div class='dot'></div>
+        </div>
+        <div class='card'>
+            <img src='middle.png'>
+            <div class='date'>2011. 03.</div>
+            <div class='what'>중학교 입학</div>
+            <div class='where'>목암중학교</div>
+            <div class='text'>태어나서 처음으로 교복입은 날</div>
+            <div class='dot'></div>
+        </div>
+
+        <div class='card'>
+            <img src='skku.jpg'>
+            <div class='date'>2017. 03.</div>
+            <div class='what'>대학교 입학</div>
+            <div class='where'>성균관대학교</div>
+            <div class='text'>지겨운 수험생활 끝에 대학 입학!</div>
+            <div class='dot'></div>
+        </div>
+        <div class='line'></div>
+    <button id='tothetop'><a href='#title'>▲TOP</button></a>
+    </div>
+</body>
+</html>

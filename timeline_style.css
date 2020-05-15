@@ -1,0 +1,120 @@
+.content{
+    padding: 0 10%;
+    margin-top: 5%; 
+}
+body{
+    background-color: rgb(227, 253, 246);
+    transition:0.2s;
+}
+.buttons{
+    text-align: center;
+}
+#tothetop{
+    position : fixed;
+    right: 10px;
+    bottom : 50px;
+}
+h1{
+    font-family: 'Yeon Sung';
+    font-size:45px;
+    margin : 50px;
+}
+img{
+    width: 100px;
+    height : 100px;
+    grid-column: 1;
+    border-radius: 100%;
+    border: 3px solid rgb(92, 190, 166);
+    position: relative;
+    top : 10%;
+    left : 20%;
+}
+.card{
+    position : relative;
+    display:grid;
+    grid-template-columns: 60px auto 30px;
+    background-color:rgb(244, 252, 250) ;
+    width : 40%;
+    margin-bottom: 5%;
+    border-radius: 8%;
+    border : 3px solid rgb(92, 190, 166);
+    box-shadow: 0px 0px 6px 2px rgb(192, 250, 236) inset;
+    transition : 0.2s;
+}
+.card:hover{
+    background-color: rgb(209, 236, 222);
+    box-shadow: none;
+    color : ivory;
+}
+.date{
+    grid-column: 2;
+    position: relative;
+    top : 20%;
+    left : 30%;
+    font-family: 'Yeon Sung';
+    font-size: 20px;
+}
+.what{
+    grid-column: 2;
+    position: relative;
+    bottom : 160%;
+    left : 30%;
+    font-weight: bold;
+    font-family: 'Yeon Sung';
+    font-size: 25px;
+}
+.where{
+    grid-column: 2;
+    position: relative;
+    bottom : 130%;
+    left : 30%;
+    font-family: 'Yeon Sung';
+    font-size: 20px;
+}
+.text{
+    grid-column: 2;
+    position: relative;
+    bottom : 50%;
+    left : 30%;
+    font-family: 'Yeon Sung';
+    font-size: 20px;
+}
+.dot{
+    width:20px;
+    height:20px;
+    background-color: rgb(63, 121, 105);
+    position : absolute;
+    right : -26%;
+    top : 40%;
+    border-radius:100% ;
+    z-index: 5;
+}
+.line{
+    position : absolute;
+    width : 5px;
+    height : 200%;
+    background-color :rgb(98, 207, 180);
+    left : 50%;
+    top : 35%;
+    margin-left: -2.5px;
+}
+.card:nth-child(even){
+    margin-left : 60%;
+}
+.card:nth-child(even) .dot{
+    position : absolute;
+    left : -28%;
+    top : 40%;
+}
+@media(max-width:1000px){
+    .dot, .line{
+        display:none;
+    }
+    .card{
+        width : 70%;
+        margin-left : 15%;
+    }
+    .card:nth-child(even){
+        margin-left : 15%;
+    }
+}
