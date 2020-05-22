@@ -10,11 +10,26 @@
 
 <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <title>2주차 과제</title>
+  <title>MyPage</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  var button = document.querySelector('input');
+  if (this.value ==='night'){
+      target.style.backgroundColor ='black';
+      target.style.color ='white';
+      button.style.backgroundColor = 'white';
+      button.style.color = 'black';
+      this.value = 'day';
+  } else{
+      target.style.backgroundColor ='white';
+      target.style.color ='black';
+      this.value = 'night';
+  }
+  ">
   <div class="container">
   <h1>MY PAGE</h1>
   <div id="list">
@@ -23,7 +38,7 @@
       <li role="presentation" class="active"><a href="1.html">학과</a></li>
       <li role="presentation"><a href="2.html">인사말</a></li>
       <li role="presentation"><a href="4.html">이력</a></li>
-      <li role="presentation"><a href="3rd_timeline.html" target="_blank">일생</li></a>
+      <li role="presentation"><a href="3rd_timeline.html" target="_blank" class='password'>일생</li></a>
       <a class="btn btn-default" href="https://github.com/HeeHyun8102/My-Web-Page" role="button">Link</a>
     </ul>
     <!--
