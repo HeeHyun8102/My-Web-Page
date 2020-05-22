@@ -38,7 +38,18 @@
       <li role="presentation"><a href="1.html">학과</a></li>
       <li role="presentation" class="active"><a href="2.html">인사말</a></li>
       <li role="presentation"><a href="4.html">이력</a></li>
-      <li role="presentation"><a href="3rd_timeline.html" target="_blank">일생</li></a>
+      <li role="presentation"><a onclick="
+        var pass = prompt('패스워드를 입력하세요','');
+        if (pass == '981120'){ 
+          alert('어서 오세요!');
+          window.open('3rd_timeline.html', '_blank'); 
+        }
+        else{
+          alert('접속 할 수 없습니다.');
+          location.href='3.html';
+        }
+      
+        ">일생</li></a>
       <a class="btn btn-default" href="https://github.com/HeeHyun8102/My-Web-Page" role="button">Link</a>
     </ul>
     <!--
