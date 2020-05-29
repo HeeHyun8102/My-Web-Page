@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="input"><br>
+    <h1 id="output">sia</h1>
+    <button id='b'>입력받기</button>
+    
+    
+    <!-- 아래부터 자바스크립트 -->
+    <script type="text/javascript">
+   
+    var temp;
+    const button = document.querySelector('#b');
+
+    button.onclick= function(){
+    var input = document.getElementById("input").value;
+    temp = input;
+  
+    document.querySelector("h1").textContent = temp;
+    }
+    
+
+
+    </script>
+</body>
+</html>
